@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+<body>
+    <h1>ableton link</h1>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('beat', function(data) {
+            $("body")
+                .css({backgroundColor: '#f00'})
+                .animate({backgroundColor: '#fff'}, 120);
+            console.log(data.beat);
+        });
+    </script>
+</body>
+</html>
