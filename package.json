@@ -13,7 +13,7 @@
   "dependencies": {
     "abletonlink": "^0.1.0",
     "express": "^4.14.1",
-    "socket.io": "^1.7.3"
+    "socket.io": "^2.4.0"
   },
   "engines": {
     "node": ">=6.0.0"
